@@ -1,6 +1,6 @@
 package com.irfan.pres;
 
-import com.irfan.com.irfan.ext.DaoImplV2;
+import com.irfan.ext.DaoImplV2;
 import com.irfan.dao.DaoImpl;
 import com.irfan.metier.MetierImpl;
 

@@ -1,2 +1,2 @@
-com.irfan.dao.DaoImpl
+com.irfan.ext.DaoImplV2
 com.irfan.metier.MetierImpl
