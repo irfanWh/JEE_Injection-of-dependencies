@@ -1,8 +1,16 @@
 package com.irfan.metier;
 
 import com.irfan.dao.IDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
+//@Component("metier")
+@Service("metier")
 public class MetierImpl implements IMetier {
+    //@Autowired
+    //@Qualifier("d2")
     private IDao dao; //couplage faible
 
     /**
@@ -10,12 +18,10 @@ public class MetierImpl implements IMetier {
      * un objet d'une classe qui implemente qui l'interface IDao
      * au momment de l'instantiation
      */
-    public MetierImpl(IDao dao) {
+    public MetierImpl(@Qualifier("d2") IDao dao) {
         this.dao = dao;
     }
 
-    public MetierImpl() {
-    }
 
     @Override
     public double calcul() {

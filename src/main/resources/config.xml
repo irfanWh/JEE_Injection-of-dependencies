@@ -5,8 +5,8 @@
            http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="d" class="com.irfan.dao.DaoImpl"></bean>
+    <bean id="d" class="com.irfan.ext.DaoImplV2"></bean>
     <bean id="metier" class="com.irfan.metier.MetierImpl">
-        <property name="dao" ref="d"></property>
+        <constructor-arg ref="d"></constructor-arg>
     </bean>
 </beans>
