@@ -1,0 +1,2 @@
+com.irfan.dao.DaoImpl
+com.irfan.metier.MetierImpl
